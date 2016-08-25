@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>New Tab</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="background"></div>
+	<p class="top fadeIn">
+		<span class="greeting"></span>! 
+		<span class="weather"></span>
+		<!--<span class="weatherlink right"></span>-->
+	</p>
+	<div class="centerWrapper fadeIn">
+		<br>
+		<div id='searchbarcontainer'>
+			<!--<img src='search.png' id='sicon' />-->
+			<input type='text' size='20' value='' autocomplete='false' autofocus='yes' id='searchbox' placeholder='Search'/>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="timeDate no-transform">
+			<div id="time" class="left"></div>
+			<div id="date" class="right text-right"></div>
+		</div>
+		<br>
+		<ul class="box">
+			<div class="left">
+				<li><a id="parent1" class="parent" href="javascript:void(0)">Social<span class="right">1</span></a>
+					<ul class="subMenu">
+						<li><a class="tab tab1" href="https://messenger.com/">Messenger<span class="right">m</span></a></li>
+						<li><a class="tab tab1" href="https://web.whatsapp.com/">WhatsApp<span class="right">w</span></a></li>
+						<li><a class="tab tab1" href="https://twitter.com/">Twitter<span class="right">t</span></a></li>
+						<li><a class="tab tab1" href="https://instagram.com/">Instagram<span class="right">i</span></a></li>
+						<li><a class="tab tab1" href="https://inbox.google.com/u/0/">Gmail<span class="right">g</span></a></li>
+						<li><a class="tab tab1" href="https://4chan.org/">4Chan<span class="right">c</span></a></li>
+					</ul>
+				</li>
+				<li><a id="parent2" class="parent" href="javascript:void(0)">Media<span class="right">2</span></a>
+					<ul class="subMenu">
+						<li><a class="tab tab2" href="https://music.google.com/">Google Play Music<span class="right">p</span></a></li>
+						<li><a class="tab tab2" href="https://netflix.com/">Netflix<span class="right">n</span></a></li>
+						<li><a class="tab tab2" href="http://kissanime.to/">KissAnime<span class="right">k</span></a></li>
+						<li><a class="tab tab2" href="https://youtube.com/">YouTube<span class="right">y</span></a></li>
+						<li><a class="tab tab2" href="https://soundcloud.com/">SoundCloud<span class="right">s</span></a></li>
+					</ul>
+				</li>
+				<li><a id="parent3" class="parent" href="javascript:void(0)">Other<span class="right">3</span></a>
+					<ul class="subMenu">
+						<li><a class="tab tab3" href="https://keep.google.com/">Google Keep<span class="right">k</span></a></li>
+						<li><a class="tab tab3" href="https://drive.google.com/">Google Drive<span class="right">d</span></a></li>
+						<li><a class="tab tab3" href="https://calendar.google.com/">Google Calendar<span class="right">c</span></a></li>
+						<li><a class="tab tab3" href="https://contacts.google.com/">Google Contacts<span class="right">t</span></a></li>
+					</ul>
+				</li>
+			</div>
+			<div class="right">
+				<li><a id="parent4" class="parent" href="javascript:void(0)">4Chan<span class="right">4</span></a>
+					<ul class="subMenu">
+						<li><a class="tab tab4" href="https://boards.4chan.org/b/catalog">/b/ - Random<span class="right">b</span></a></li>
+						<li><a class="tab tab4" href="https://boards.4chan.org/g/catalog">/g/ - Technology<span class="right">g</span></a></li>
+						<li><a class="tab tab4" href="https://boards.4chan.org/out/catalog">/out/ - Outdoors<span class="right">o</span></a></li>
+						<li><a class="tab tab4" href="https://boards.4chan.org/wg/catalog">/wg/ - Wallpapers/General<span class="right">w</span></a></li>
+						<li><a class="tab tab4" href="https://boards.4chan.org/tg/catalog">/tg/ - Traditional Games<span class="right">t</span></a></li>
+					</ul>
+				</li>
+				<li><a id="parent5" class="parent" href="javascript:void(0)">Weather<span class="right">5</span></a>
+					<ul class="subMenu">
+						<li><a class="tab tab5" href=""><span class="weather1"></a></span></li>
+						<li><a class="tab tab5" href=""><span class="weather2"></span></a></li>
+						<li><a class="tab tab5" href=""><span class="weather3"></span></a></li>
+						<li><a class="tab tab5" href=""><span class="weather4"></span></a></li>
+					</ul>
+				</li>
+				<li><a id="parent6" class="parent" href="javascript:void(0)">/Search Queries/<span class="right">/</span></a>
+					<ul class="subMenu">
+						<li><a class="tab tab6" href="">Wikipedia<span class="right">-w</span></a></li>
+						<li><a class="tab tab6" href="">Youtube<span class="right">-y</span></a></li>
+						<li><a class="tab tab6" href="">4Chan<span class="right">-4</span></a></li>
+						<li><a class="tab tab6" href="">The Pirate Bay<span class="right">-p</span></a></li>
+						<li><a class="tab tab6" href="">Play Music<span class="right">-pm</span></a></li>
+						<li><a class="tab tab6" href="">Kiss Anime<span class="right">-ka</span></a></li>
+						<li><a class="tab tab6" href="">Twitter<span class="right">-t / -tl</span></a></li>
+					</ul>
+				</li>
+			</div>
+		</ul>	
+		<div class="clear"></div>
+	</div>
+	<p class="bottom fadeIn2"><span class="quote"></span></p>
+	<script src="jquery.min.js"></script>
+	<script async src="mousetrap.min.js"></script>
+	<script async src="jquery.simpleWeather.min.js"></script>
+	<script async src="script.js"></script>
+	<script async src="search.js"></script>
+</body>
+</html>
